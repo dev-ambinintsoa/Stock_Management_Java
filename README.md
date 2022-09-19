@@ -63,7 +63,7 @@ Here is Everything you need To install before running The project.
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn
+How to set up The project in your local machine
 
 1. Install THe Database Schema ( Coming soon)
 2. Clone the repo
