@@ -108,7 +108,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Ambinintsoa Herizo - ambinintsoa.m.herizo@gmail.com
 
-Project Link: [https://github.com/zo-ambinintsoa/Stock_Management_Java](https://github.com/Zo-ambinintsoa/Stock_Management_Java)
+Project Link: [https://github.com/zo-ambinintsoa/Stock_Management_Java](https://github.com/dev-ambinintsoa/Stock_Management_Java)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -126,5 +126,5 @@ Project Link: [https://github.com/zo-ambinintsoa/Stock_Management_Java](https://
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/zo-ambinintsoa
+[linkedin-url]: https://linkedin.com/in/ambinintsoa-zo
 [product-screenshot]: images/screenshot.png
