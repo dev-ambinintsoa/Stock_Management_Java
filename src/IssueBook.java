@@ -11,7 +11,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Pankaj Yadav
+ * @author Ambinitsoa Herizo
  */
 public class IssueBook extends javax.swing.JFrame {
 
@@ -849,18 +849,14 @@ public class IssueBook extends javax.swing.JFrame {
         });
     }
 
-    public void connect()
-    {
-        try
-        {  
-             Class.forName("com.mysql.jdbc.Driver");
-             con=DriverManager.getConnection("jdbc:mysql://localhost:3306/projectdb?","root","");  
-            stmt=con.createStatement(); 
-        }
-        catch(Exception e)
-        { 
+    public void connect() {
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/projectdb?useSSL=false&serverTimezone=UTC", "root", "");
+            stmt = con.createStatement();
+        } catch (ClassNotFoundException | SQLException e) {
             System.out.println(e);
-            JOptionPane.showMessageDialog(this,"connection error");
+            JOptionPane.showMessageDialog(null, "Connection error");
         }
     }
     public void disconnect()

@@ -9,7 +9,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Pankaj Yadav
+ * @author Ambinintsoa Herizo
  */
 public class IssuedBooks extends javax.swing.JFrame {
 
@@ -254,12 +254,13 @@ public class IssuedBooks extends javax.swing.JFrame {
                     .addComponent(t2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(17, 17, 17)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(r2)
-                    .addComponent(txt2)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(t3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(r2)
+                        .addComponent(txt2)))
                 .addGap(17, 17, 17)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(47, 47, 47)
@@ -522,17 +523,14 @@ public class IssuedBooks extends javax.swing.JFrame {
         });
     }
 
-    public void connect()
-    {
-        try
-        {  
-             Class.forName("com.mysql.jdbc.Driver");
-             con=DriverManager.getConnection("jdbc:mysql://localhost:3306/projectdb?","root","");    
-            stmt=con.createStatement(); 
-        }
-        catch(Exception e)
-        { 
-            JOptionPane.showMessageDialog(this,"connection error");
+    public void connect() {
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/projectdb?useSSL=false&serverTimezone=UTC", "root", "");
+            stmt = con.createStatement();
+        } catch (ClassNotFoundException | SQLException e) {
+            System.out.println(e);
+            JOptionPane.showMessageDialog(null, "Connection error");
         }
     }
     public void disconnect()
