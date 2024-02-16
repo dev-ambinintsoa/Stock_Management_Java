@@ -106,7 +106,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Ambinintsoa Herizo - ambinintsoa.m.herizo@gmail.com
+Ambinintsoa Herizo - contact@luckymhz.com
 
 Project Link: [https://github.com/zo-ambinintsoa/Stock_Management_Java](https://github.com/dev-ambinintsoa/Stock_Management_Java)
 
