@@ -10,15 +10,12 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-
+  <img src="./screenshot/java-library-management.gif" alt="Library Management Screenshot" width="80%" height="80%">
   <h3 align="center">Lybrary Manangement In Java SE</h3>
-
   <p align="center">
     An awesome Java Desktop template to jumpstart your projects!
   </p>
 </div>
-
-
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
